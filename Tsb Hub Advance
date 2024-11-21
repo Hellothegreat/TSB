@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 
-local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/WRUyYTdY"))()
 
 local Window = OrionLib:MakeWindow({Name = "TSB Hub Advance", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
