@@ -151,6 +151,15 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Do Not Press!!",
+	Callback = function()
+      		local fakeban = "You've been banned!! because you were using admin commands without the owners permission!!" game.Players.LocalPlayer:Kick(fakeban) 
+end
+  	end    
+})
+
+
 local Section = Tab:AddSection({
 	Name = "Coming soon!!"
 })
