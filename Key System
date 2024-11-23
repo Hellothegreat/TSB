@@ -34,10 +34,6 @@ local function IncorrectKeyNotification()
 	Time = 5
 })
 end
-
-local function LocalFakeBan()
-                  local fakeban = "Incorrect Key!!" game.Players.LocalPlayer:Kick(fakeban)
-end
         
    local Tab = Window:MakeTab({
 	Name = "Key",
@@ -63,7 +59,6 @@ Tab:AddButton({
             OrionLib:Destroy()
             else
                    IncorrectKeyNotification()
-                   LocalFakeBan()
           end
   end   
 })
