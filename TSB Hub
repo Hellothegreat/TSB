@@ -391,6 +391,34 @@ ValueName = <string> - The text after the value number.
 Callback = <function> - The function of the slider.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Teleport"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+getgenv().selected = nil
+
+function DetectOption()
+if getgenv().selected == "Option 1" then
+print("Setting walkspeed to 100!")
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+elseif getgenv().selected == "Option 2" then
+print("Setting jumppower to 100!")
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+elseif getgenv().selected == "Option 3" then
+print("Resetting!")
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+end)
+
+Others:CreateDropdown("test", {"Option 1", "Option 2", "Option 3"}, function(selectedopt)
+getgenv.selected = selectedopt
+DetectOption()
+end
+
 
 --Credits Tab
 
