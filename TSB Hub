@@ -414,7 +414,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end
 end)
 
-Others:CreateDropdown("test", {"Option 1", "Option 2", "Option 3"}, function(selectedopt)
+Tab:CreateDropdown("test", {"Option 1", "Option 2", "Option 3"}, function(selectedopt)
 getgenv.selected = selectedopt
 DetectOption()
 end
