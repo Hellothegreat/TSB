@@ -4,6 +4,20 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shle
 
 local Window = OrionLib:MakeWindow({Name = "TSB Hub Advance", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+local function DoStuff()
+                  if getgenv().SelectedOption == "Death Counter" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-42.2812157, 29.2539902, 20335.6465, -0.70037514, -2.51200949e-09, 0.71377492, -2.36231279e-09, 1, 1.20136501e-09, -0.71377492, -8.44753489e-10, -0.70037514)
+      elseif getgenv().SelectedOption == "Atomic Slash" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1062.97192, 141.397034, 22989.1641, -0.644519925, 4.93302039e-08, -0.764587522, 4.48407143e-08, 1, 2.67195972e-08, 0.764587522, -1.70633392e-08, -0.644519925)
+      elseif getgenv().SelectedOption == "Baseplate" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1196.78015, 405.988922, 23126.0801, 0.909705937, -1.84152127e-09, 0.415253073, 3.34002848e-09, 1, -2.88239277e-09, -0.415253073, 4.00908684e-09, 0.909705937)
+      elseif getgenv().SelectedOption == "Mountain" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1288.34888, 813.505737, -858.876099, -0.644078851, -0.0109579246, 0.764880657, -3.20578342e-09, 0.99989742, 0.0143248476, -0.764959097, 0.00922632869, -0.644012749)
+      elseif getgenv().SelectedOption == "Middle" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(226.314468, 441.583069, -4.86843491, -0.908054888, 0.016997857, -0.418506175, 6.49522436e-09, 0.999176204, 0.040582072, 0.418851227, 0.0368507467, -0.90730685)
+       end.. 
+end
+
 local Tab = Window:MakeTab({
 	Name = "Characters",
 	Icon = "rbxassetid://4483345998",
@@ -381,6 +395,16 @@ Tab:AddSlider({
 	end    
 })
 
+Tab:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"Death Counter", "Atomic Slash", "Baseplate", "Mountain", "Middle"},
+	Callback = function(Value)
+		getgenv().SelectedOption = Option
+		DoStuff()
+	end    
+})
+
 --[[
 Name = <string> - The name of the slider.
 Min = <number> - The minimal value of the slider.
@@ -391,6 +415,25 @@ ValueName = <string> - The text after the value number.
 Callback = <function> - The function of the slider.
 ]]
 
+
+--Scripts Tab
+
+local Tab = Window:MakeTab({
+	Name = "Same script But Other Libs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Other Form of this Script"
+})
+
+Tab:AddButton({
+	Name = "RayField",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/RayField%20TSB"))()
+  	end    
+})
 
 
 
