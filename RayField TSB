@@ -238,6 +238,14 @@ local Button = Tab4:CreateButton({
    end,
 })
 
+local Section = Tab4:CreateSection("Removal")
+
+   Name = "Remove Trees",
+   Callback = function()
+   game.Workspace.Map.Trees:Destroy()
+   end,
+})
+
 local Tab5 = Window:CreateTab("Credits", 4483362458) -- Title, Image
 
 local Label = Tab5:CreateLabel("Made By GODGAMER14", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
