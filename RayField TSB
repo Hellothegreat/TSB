@@ -7,7 +7,7 @@ local Window = Rayfield:CreateWindow({
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "TSB Hub",
    LoadingSubtitle = "by GODGAMER14",
-   Theme = "Amber Glow", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "AmberGlow", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -240,6 +240,7 @@ local Button = Tab4:CreateButton({
 
 local Section = Tab4:CreateSection("Removal")
 
+local Button = Tab4:CreateButton({
    Name = "Remove Trees",
    Callback = function()
    game.Workspace.Map.Trees:Destroy()
@@ -252,6 +253,6 @@ local Label = Tab5:CreateLabel("Made By GODGAMER14", 4483362458, Color3.fromRGB(
 
 local Label = Tab5:CreateLabel("Keep Supporting So I can make more script!!", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
-local Label = Tab:CreateLabel("Script update will be soon!!", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Label = Tab5:CreateLabel("Script update will be soon!!", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
 Rayfield:LoadConfiguration()
