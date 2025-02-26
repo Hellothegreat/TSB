@@ -1,0 +1,5 @@
+if game.PlaceId == 10449761463 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/RayFieldTSB'))()
+elseif game.PlaceId == 18619441869 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/PizzeriaMain'))()
+end
