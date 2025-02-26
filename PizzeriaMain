@@ -1,0 +1,467 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "🍕🍕 Pizzeria Tycoon 2",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Pizzeria Tycoon 2 [SCRIPT]",
+   LoadingSubtitle = "by GODGAMER14",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Script Key",
+      Subtitle = "Key-Start",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Non-Applicable", "N/A"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Main = Window:CreateTab("Main", "construction") -- Title, Image
+
+local Section = Main:CreateSection("Rebirths Multiplier",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+
+local Button = Main:CreateButton({
+   Name = "90%",
+   Interact = 'Activate',
+   Callback = function()
+   game.Players.LocalPlayer.leaderstats.Rebirths.Value = 3
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "150%",
+   Interact = 'Activate',
+   Callback = function()
+   game.Players.LocalPlayer.leaderstats.Rebirths.Value = 5
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "300%",
+   Interact = 'Activate',
+   Callback = function()
+   game.Players.LocalPlayer.leaderstats.Rebirths.Value = 10
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "900%",
+   Interact = 'Activate',
+   Callback = function()
+   game.Players.LocalPlayer.leaderstats.Rebirths.Value = 30
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "1500%",
+   Interact = 'Activate',
+   Callback = function()
+   game.Players.LocalPlayer.leaderstats.Rebirths.Value = 50
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "3000% [💥💥Super💥💥]",
+   Interact = 'Activate',
+   Callback = function()
+   game.Players.LocalPlayer.leaderstats.Rebirths.Value = 100
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "9000 [💥💥Super💥💥]",
+   Interact = 'Activate',
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = "15000 [💥💥Super💥💥]",
+   Interact = 'Activate',
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Main:CreateButton({
+   Name = " ∞ / Infinite [💥💥Ultimate💥💥]",
+   Interact = 'Activate',
+   Callback = function()
+   game.Players.LocalPlayer.leaderstats.Rebirths.Value = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+   end,
+})
+
+local Section = Main:CreateSection("Coming Soon",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+
+local Money = Window:CreateTab("Money", "dollar-sign") -- Title, Image
+
+local Button = Money:CreateButton({
+   Name = "Add $1",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $10",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 10
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $50",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 50
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $100",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 100
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $150",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 150
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $200",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 200
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $500",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 500
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $1000",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 1000
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $1500",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 1500
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $2000",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 2000
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $5000",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 5000
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $10000",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 10000
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $10500",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 10500
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $11000",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 11000
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $15000",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 15000
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $20000",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 20000
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = Money:CreateButton({
+   Name = "Add $∞ / Infinite",
+   Interact = 'Activate',
+   Callback = function()
+local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Input = Money:CreateInput({
+   Name = "Custom Money",
+   CurrentValue = "",
+   PlaceholderText = "Input Number",
+   RemoveTextAfterFocusLost = false,
+   Flag = "Input1",
+   Callback = function(Text)
+   local args = {
+    [1] = "Money",
+    [2] = workspace.Restaurants.VanivratTSB4.Addments.Chairs:FindFirstChild("1-1"),
+    [3] = Text
+}
+
+game:GetService("ReplicatedStorage").Remotes.Clients:FireServer(unpack(args))
+
+   end,
+})
+
+local Section = Money:CreateSection("Coming Soon!")
+
+local Misc = Window:CreateTab("Misc", "settings") -- Title, Image
+
+local Section = Misc:CreateSection("Gamepass")
+
+local Toggle = Misc:CreateToggle({
+   Name = "Get All Gamepasses",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(X)
+   if X then
+   game:GetService("Players").LocalPlayer.GamePasses["884091418"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884075540"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["721432459"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884159379"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884160292"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884188220"].Value = true 
+
+game:GetService("Players").LocalPlayer.GamePasses["884212220"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884219302"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884260210"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884403116"].Value = true
+
+game:GetService("Players").LocalPlayer.GamePasses["884320178"].Value = true
+
+Rayfield:Notify({
+   Title = "Gamepasses",
+   Content = "Enabled",
+   Duration = 3.5,
+   Image = "check",
+})
+
+             else
+game:GetService("Players").LocalPlayer.GamePasses["884091418"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884075540"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["721432459"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884159379"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884160292"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884188220"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884212220"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884219302"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884260210"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884403116"].Value = false
+
+game:GetService("Players").LocalPlayer.GamePasses["884320178"].Value = false
+
+Rayfield:Notify({
+   Title = "Gamepasses",
+   Content = "Disabled",
+   Duration = 3.5,
+   Image = "check",
+})
+
+           end
+   end,
+})
+
+
+
+Rayfield:LoadConfiguration()
