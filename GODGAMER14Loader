@@ -1,5 +1,60 @@
-if game.PlaceId == 10449761463 then
+if game.PlaceId == 6677985923 then
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Checking Game!", -- Required
+	Text = "Checking that the hub Supports the game!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Supported!!", -- Required
+	Text = "Hub Supports The Game!!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(2)
+
+loadstring(game:HttpGet('https:/raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/MilTycoon'))()
+
+elseif game.PlaceId == 10449761463 then
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Checking Game!", -- Required
+	Text = "Checking that the hub Supports the game!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Supported!!", -- Required
+	Text = "Hub Supports The Game!!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(2)
+
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/RayFieldTSB'))()
+
 elseif game.PlaceId == 18619441869 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/PizzeriaMain'))()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Checking Game!", -- Required
+	Text = "Checking that the hub Supports the game!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Supported!!", -- Required
+	Text = "Hub Supports The Game!!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(2)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/PizzeriaTycoon'))()
+
 end
