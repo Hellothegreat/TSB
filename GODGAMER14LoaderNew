@@ -1,5 +1,24 @@
+if game.PlaceId == 109819539837829 then
 
-if game.PlaceId == 107326628277908 then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Checking Game!", -- Required
+	Text = "Checking that the hub Supports the game!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Supported!!", -- Required
+	Text = "Hub Supports The Game!!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(2)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/Make%20and%20Sell%20Cars'))()
+
+elseif game.PlaceId == 107326628277908 then
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Checking Game!", -- Required
