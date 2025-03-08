@@ -19,9 +19,7 @@ wait(2)
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/Be%20A%20CAR'))()
 
-elseif
-
-if game.PlaceId == 6677985923 then
+elseif game.PlaceId == 6677985923 then
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Checking Game!", -- Required
