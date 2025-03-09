@@ -1,4 +1,24 @@
-if game.PlaceId == 109819539837829 then
+if game.PlaceId == 15862090066 then
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Checking Game!", -- Required
+	Text = "Checking that the hub Supports the game!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Supported!!", -- Required
+	Text = "Hub Supports The Game!!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(2)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/WeaponsHub'))()
+
+elseif game.PlaceId == 109819539837829 then
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Checking Game!", -- Required
