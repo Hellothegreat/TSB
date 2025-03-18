@@ -1,4 +1,24 @@
-if game.PlaceId == 15407368046 then
+if game.PlaceId == 14157644155 then
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Checking Game!", -- Required
+	Text = "Checking that the hub Supports the game!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Supported!!", -- Required
+	Text = "Hub Supports The Game!!", -- Required
+	Icon = "rbxassetid://1234567890" -- Optional
+})
+
+wait(2)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Hellothegreat/TSB/refs/heads/main/Moneygrab'))()
+
+elseif game.PlaceId == 15407368046 then
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Checking Game!", -- Required
